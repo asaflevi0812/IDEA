@@ -26,8 +26,6 @@ sudo apt-get install libssl-dev
 sudo apt install glib-2.0
 # fix glib path
 sudo cp /usr/lib/x86_64-linux-gnu/{libglib-2.0.a,libglib-2.0.so} /usr/lib
-sudo cp -r /usr/include/glib-2.0/* /usr/include/
-sudo cp -r /usr/lib/x86_64-linux-gnu/glib-2.0/include/* /usr/include/
 
 ########################################
 # BUILD: copy code and build artifacts #

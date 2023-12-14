@@ -2,7 +2,7 @@ import glob
 
 
 src_dirs = ["src", "src/chunking", "src/clucene-wrapper", "src/fsl", "src/index", "src/recipe", "src/storage", "src/utils", "src/reverse_mapping"]
-include_dirs = ["src/lucene++_include", "src/lucene++_include/lucene++", "src/lucene++_include/lucene++/core", "src/lucene++_include/lucene++/contrib"]
+include_dirs = ["/usr/include/glib-2.0", "/usr/lib/x86_64-linux-gnu/glib-2.0/include", "src/lucene++_include", "src/lucene++_include/lucene++", "src/lucene++_include/lucene++/core", "src/lucene++_include/lucene++/contrib"]
 include_dirs += src_dirs
 libs = ["boost_system", "boost_random", 
         "pthread", "lucene++", "lucene++-contrib", "ssl", "db", "crypto"]
