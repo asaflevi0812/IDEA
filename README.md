@@ -6,7 +6,8 @@ sudo apt update
 ```sudo apt-get install -y software-properties-common
 sudo add-apt-repository ppa:ubuntu-toolchain-r/test
 sudo apt update
-sudo apt install g++-7 -y```
+sudo apt install g++-7 -y
+```
 ### boost
 sudo apt-get install build-essential g++ python3-dev autotools-dev libicu-dev libbz2-dev libboost-all-dev -y
 ### berkeley db
@@ -19,7 +20,8 @@ cd build_unix/
 sudo make
 sudo make install
 cd ../..
-sudo rm -rf db-4.8.30 db-4.8.30.zip```
+sudo rm -rf db-4.8.30 db-4.8.30.zip
+```
 ### openssl
 sudo apt-get install libssl-dev -y
 ### glib
