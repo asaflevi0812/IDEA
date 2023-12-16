@@ -27,13 +27,12 @@ sudo rm -rf db-4.8.30 db-4.8.30.zip
 ### openssl
 `sudo apt-get install libssl-dev -y`
 ### glib
-`sudo apt-get install libglib2.0-dev -y`
+```
+sudo apt-get install libglib2.0-dev -y
+sudo cp /usr/lib/x86_64-linux-gnu/{libglib-2.0.a,libglib-2.0.so} /usr/lib
+```
 ### git
 `sudo apt install git -y`
-### fix glib path
-`sudo cp /usr/lib/x86_64-linux-gnu/{libglib-2.0.a,libglib-2.0.so} /usr/lib`
-### install cmake
-`sudo apt install cmake -y`
 
 # BUILD: copy code and build artifacts #
 
