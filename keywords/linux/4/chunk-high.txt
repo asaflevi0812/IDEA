@@ -1,0 +1,4 @@
+authflavour
+regulator/max1586.h
+0x3c04
+lastkey

@@ -1,0 +1,16 @@
+touchscreen_sun4i
+freebh
+achive
+nup
+oddparity
+keygen
+authflavour
+regulator/max1586.h
+0x3c04
+lastkey
+bufioen
+xclient
+0x6057
+0xd9f5
+mr97310a
+b2_prot
