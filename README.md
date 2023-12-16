@@ -3,7 +3,8 @@
 sudo apt update
 
 ### g++-7
-```sudo apt-get install -y software-properties-common
+```
+sudo apt-get install -y software-properties-common
 sudo add-apt-repository ppa:ubuntu-toolchain-r/test
 sudo apt update
 sudo apt install g++-7 -y
@@ -11,7 +12,8 @@ sudo apt install g++-7 -y
 ### boost
 `sudo apt-get install build-essential g++ python3-dev autotools-dev libicu-dev libbz2-dev libboost-all-dev -y`
 ### berkeley db
-```sudo apt install unzip
+```
+sudo apt install unzip
 wget http://download.oracle.com/berkeley-db/db-4.8.30.zip
 unzip db-4.8.30.zip
 cd db-4.8.30
@@ -36,13 +38,15 @@ sudo rm -rf db-4.8.30 db-4.8.30.zip
 # BUILD: copy code and build artifacts #
 
 ### clone repo
-```git clone https://github.com/asaflevi0812/IDEA.git
+```
+git clone https://github.com/asaflevi0812/IDEA.git
 cd IDEA
 ```
 ### install LucenePlusPlus
 `sudo cp libs/liblucene++.so libs/liblucene++-contrib.so /usr/lib/`
 ### compile
-```chmod +x compile.sh
+```
+chmod +x compile.sh
 ./compile.sh
 mkdir -p working_directories/backup_directory working_directories/index_directory working_directories/chunk_to_file_directory
 ```
