@@ -38,10 +38,12 @@ sudo apt install cmake -y
 # BUILD: copy code and build artifacts #
 ########################################
 
+# clone repo
 git clone https://github.com/asaflevi0812/IDEA.git
 cd IDEA
 # install LucenePlusPlus
-sudo cp libs/liblucene++.so libs/liblucene++-contrib.so 
+sudo cp libs/liblucene++.so libs/liblucene++-contrib.so /usr/lib/
+# compile
 chmod +x compile.sh
 ./compile.sh
 mkdir -p working_directories/backup_directory working_directories/index_directory working_directories/chunk_to_file_directory
