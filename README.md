@@ -63,5 +63,10 @@ mkdir -p working_directories/backup_directory working_directories/index_director
 `destor -m hello`
 ### lookup the word "hello" in the IDEA index
 `destor -l hello`
+### lookup with the file-med dictionary
+```
+destor -m -f"keywords/linux/128/file-med.txt"
+destor -l -f"keywords/linux/128/file-med.txt"
+```
 
 # CONFIGURE #
