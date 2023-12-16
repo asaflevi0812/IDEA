@@ -1,5 +1,6 @@
 # SETUP & INSTALL #
 
+### apt update
 `sudo apt update`
 
 ### g++-7
