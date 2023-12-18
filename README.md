@@ -2,7 +2,9 @@
 
 ### install git and pull artifacts repository
 `sudo apt update`
+
 `git clone https://github.com/asaflevi0812/IDEA.git`
+
 `cd IDEA`
 
 ### install dependencies
