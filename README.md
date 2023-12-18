@@ -3,6 +3,7 @@
 ### install git and pull artifacts repository
 ```
 sudo apt update
+sudo apt install git -y
 git clone https://github.com/asaflevi0812/IDEA.git
 cd IDEA
 ```
