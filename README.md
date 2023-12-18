@@ -9,7 +9,10 @@ cd IDEA
 ```
 
 ### install dependencies
-`./install_dependencies.sh`
+```
+chmod +x install_dependencies.sh
+./install_dependencies.sh
+```
 
 # BUILD: copy code and build artifacts #
 
