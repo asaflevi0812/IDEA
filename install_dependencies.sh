@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 sudo apt update
 sudo apt-get install -y software-properties-common
 sudo add-apt-repository ppa:ubuntu-toolchain-r/test
