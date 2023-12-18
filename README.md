@@ -1,11 +1,11 @@
 # SETUP & INSTALL #
 
 ### install git and pull artifacts repository
-`sudo apt update`
-
-`git clone https://github.com/asaflevi0812/IDEA.git`
-
-`cd IDEA`
+```
+sudo apt update
+git clone https://github.com/asaflevi0812/IDEA.git
+cd IDEA
+```
 
 ### install dependencies
 `./install_dependencies.sh`
