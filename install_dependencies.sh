@@ -17,4 +17,4 @@ sudo rm -rf db-4.8.30 db-4.8.30.zip
 sudo apt-get install libssl-dev -y
 sudo apt-get install libglib2.0-dev -y
 sudo cp /usr/lib/x86_64-linux-gnu/{libglib-2.0.a,libglib-2.0.so} /usr/lib
-sudo apt install git -y
+sudo cp libs/liblucene++.so libs/liblucene++-contrib.so /usr/lib/
