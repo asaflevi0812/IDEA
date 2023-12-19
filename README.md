@@ -1,7 +1,10 @@
 # SETUP & INSTALL #
 
 ### install git and pull artifacts repository
+Simply install git and clone the repo.
+Dependencies are installed later in this README in ./install_dependencies.sh :)
 ```
+# takes a couple of human minutes :)
 sudo apt update
 sudo apt install git -y
 git clone https://github.com/asaflevi0812/IDEA.git
@@ -9,7 +12,15 @@ cd IDEA
 ```
 
 ### install dependencies
+Installs the libraries required for IDEA:
+* BerkeleyDB
+* Lucene++
+* BOOST
+* SSL
+* GLIB
 ```
+# takes about a minute until a single [PRESS ENTER] is required.
+# after that, about ten minutes of installation, probably less.
 chmod +x install_dependencies.sh
 ./install_dependencies.sh
 ```
