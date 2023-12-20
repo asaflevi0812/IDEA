@@ -1,4 +1,5 @@
 # SETUP & INSTALL #
+USE A CLEAN UBUNTU SERVER 16.04 LTS IMAGE. (FROM [HERE](https://releases.ubuntu.com/16.04/ubuntu-16.04.7-server-amd64.iso))
 
 ### install git and pull artifacts repository
 Simply install git and clone the repo.
@@ -19,7 +20,7 @@ Installs the libraries required for IDEA:
 * SSL
 * GLIB
 ```
-# takes about a minute until a single [PRESS ENTER] is required.
+# takes about a minute until a single [PRESS ENTER] is required. -- sometimes it does not.
 # after that, about ten minutes of installation, probably less.
 chmod +x install_dependencies.sh
 ./install_dependencies.sh

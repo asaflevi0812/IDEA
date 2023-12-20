@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo bash -c "echo deb [arch=amd64] http://archive.ubuntu.com/ubuntu focal main universe >> /etc/apt/sources.list"
 sudo apt update
 sudo apt install -y software-properties-common
 sudo add-apt-repository --yes ppa:ubuntu-toolchain-r/test
