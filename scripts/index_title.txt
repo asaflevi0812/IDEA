@@ -1,0 +1,1 @@
+index_type,total_time,process_data_time,create_reverse_mapping_time,file_num,chunk_num,data_size,read_recipe_time,read_chunk_time,chunk_index_size,db_reverse_mapping_size,complete_index_size,pathstore_size

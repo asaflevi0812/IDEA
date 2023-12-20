@@ -1,0 +1,1 @@
+index_type,keywords_num,total_lookup_time,index_lookup_time,reverse_lookup_time,chunk_found,results,external_reverse_mapping_load_time, reverse_mapping_get_files_time,indirection_time,searcher_load_time,dtor_time,lookup_no_dtor
