@@ -108,4 +108,4 @@ For example use:
 
 to search the file-med dictionary in the naive index.
 
-# CONFIGURE #
+# CONFIGURATION OPTIONS: destor.config #
