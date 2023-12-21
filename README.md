@@ -102,6 +102,8 @@ use the command:
 
 `destor -m|l -f<path_to_dictionary>`
 
+to search a list of keywords in an OR manner, i.e. if any of the terms are contained in a file, it would appear in the results.
+
 For example use:
 
 `destor -m -f"keywords/linux/128/file-med.txt"`
