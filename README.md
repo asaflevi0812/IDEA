@@ -9,6 +9,8 @@ System requirements: Ubuntu version 16.04, and the list of dependencies installe
 # SETUP & INSTALL #
 MAKE SURE TO USE A CLEAN UBUNTU SERVER 16.04 LTS IMAGE, IF POSSIBLE. (FROM [HERE](https://releases.ubuntu.com/16.04/ubuntu-16.04.7-server-amd64.iso))
 
+An existing Ubuntu 16.04 machine is also OK. The `install_dependencies.sh` script is meant to run on a clean Ubuntu Server installation.
+
 ### install git and pull artifacts repository
 Simply install git and clone the repo.
 Dependencies are installed later in this README in ./install_dependencies.sh :)
