@@ -61,19 +61,26 @@ and in our original setup the proper devices are mounted to these directories.
 # RUN: example backup, index and lookup #
 
 ### backup
-`destor datasets/LNX-3`
+create a deduplicated backup from a given dataset path. The entire directory will be recursively backed up in the backup directory defined in destor.config (discussed below).
+`destor <dataset_path>`
 ### naive index
+to create a naive index from the currently stored deduplicated backup - run the following command. The index will be stored in the HDD part index directory defined in destor.config (discussed below).
 `destor -n`
 ### IDEA index
+to create an IDEA index from the currently stored deduplicated backup - run the following command. The index parts will be stored accordingly the HDD part index directory and SSD part directory, both are defined in destor.config (discussed below).
 `destor -q`
-### lookup the word "hello" in the naive index
-`destor -m hello`
-### lookup the word "hello" in the IDEA index
-`destor -l hello`
-### lookup with the file-med dictionary
-```
-destor -m -f"keywords/linux/128/file-med.txt"
-destor -l -f"keywords/linux/128/file-med.txt"
-```
+### lookup keywords from the command line interface
+use the command:
+`destor -m|l <keyword1> <keyword2> <keyword3>`
+where m is used for the naive index and l for the IDEA index.  For example
+`destor -l hello world`
+would lookup the keywords "hello" and "world" in the IDEA index.
+
+### lookup a dictionary of keywords from a file
+use the command:
+`destor -m|l -f<path_to_dictionary>`
+For example use:
+`destor -m -f"keywords/linux/128/file-med.txt"`
+to search the file-med dictionary in the naive index.
 
 # CONFIGURE #
