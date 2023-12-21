@@ -69,23 +69,39 @@ The following command creates a deduplicated backup from a given dataset path:
 The entire directory will be recursively backed up in the backup directory defined in destor.config (discussed below).
 
 ### naive index
-to create a naive index from the currently stored deduplicated backup - run the following command. The index will be stored in the HDD part index directory defined in destor.config (discussed below).
+to create a naive index from the currently stored deduplicated backup - run the following command:
+
 `destor -n`
+
+The index will be stored in the HDD part index directory defined in destor.config (discussed below).
+
 ### IDEA index
-to create an IDEA index from the currently stored deduplicated backup - run the following command. The index parts will be stored accordingly the HDD part index directory and SSD part directory, both are defined in destor.config (discussed below).
+to create an IDEA index from the currently stored deduplicated backup - run the following command:
+
 `destor -q`
+
+The index parts will be stored accordingly the HDD part index directory and SSD part directory, both are defined in destor.config (discussed below).
+
 ### lookup keywords from the command line interface
 use the command:
+
 `destor -m|l <keyword1> <keyword2> <keyword3>`
+
 where m is used for the naive index and l for the IDEA index.  For example
+
 `destor -l hello world`
+
 would lookup the keywords "hello" and "world" in the IDEA index.
 
 ### lookup a dictionary of keywords from a file
 use the command:
+
 `destor -m|l -f<path_to_dictionary>`
+
 For example use:
+
 `destor -m -f"keywords/linux/128/file-med.txt"`
+
 to search the file-med dictionary in the naive index.
 
 # CONFIGURE #
