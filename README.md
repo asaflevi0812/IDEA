@@ -52,7 +52,8 @@ By default, they are defined as follows:
 * backup directory: working_directories/backup_directory
 * HDD part directory: working_directories/index_directory
 * SSD part directory: working_directories/chunk_to_file_directory
-the following command creates the directories:
+
+The following command creates the directories:
 ```
 mkdir -p working_directories/backup_directory working_directories/index_directory working_directories/chunk_to_file_directory
 ```
@@ -61,8 +62,12 @@ and in our original setup the proper devices are mounted to these directories.
 # RUN: example backup, index and lookup #
 
 ### backup
-create a deduplicated backup from a given dataset path. The entire directory will be recursively backed up in the backup directory defined in destor.config (discussed below).
+The following command creates a deduplicated backup from a given dataset path: 
+
 `destor <dataset_path>`
+
+The entire directory will be recursively backed up in the backup directory defined in destor.config (discussed below).
+
 ### naive index
 to create a naive index from the currently stored deduplicated backup - run the following command. The index will be stored in the HDD part index directory defined in destor.config (discussed below).
 `destor -n`
