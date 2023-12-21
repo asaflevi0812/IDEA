@@ -40,7 +40,7 @@ chmod +x install_dependencies.sh
 ./install_dependencies.sh
 ```
 
-# BUILD: copy code and build artifacts #
+# BUILD & ENVIRONMENT #
 
 ### compile
 RUN this from the IDEA repository to compile the code.
