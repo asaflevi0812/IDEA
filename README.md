@@ -39,11 +39,24 @@ chmod +x install_dependencies.sh
 # BUILD: copy code and build artifacts #
 
 ### compile
+RUN this from the IDEA repository to compile the code.
 ```
 chmod +x compile.sh
 ./compile.sh
+```
+
+### prepare backup and index directories
+In the destor.config file (discussed later), the paths to the directories containing the destor backup and the IDEA HDD index part and SSD index part are defined.
+
+By default, they are defined as follows:
+* backup directory: working_directories/backup_directory
+* HDD part directory: working_directories/index_directory
+* SSD part directory: working_directories/chunk_to_file_directory
+the following command creates the directories:
+```
 mkdir -p working_directories/backup_directory working_directories/index_directory working_directories/chunk_to_file_directory
 ```
+and in our original setup the proper devices are mounted to these directories.
 
 # RUN: example backup, index and lookup #
 
