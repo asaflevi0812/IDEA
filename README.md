@@ -1,6 +1,7 @@
 This repository contains the source code for the paper:
 
-#### Asaf Levi, Philip Shilane, Sarai Sheinvald, Gala Yadgar. Physical vs. Logical Indexing with IDEA: Inverted Deduplication-Aware Index. To appear in 22nd USENIX Conference on File and Storage Technologies (FAST '24), February 2024. 
+## Asaf Levi, Philip Shilane, Sarai Sheinvald, Gala Yadgar. Physical vs. Logical Indexing with IDEA: Inverted Deduplication-Aware Index.
+#### To appear in 22nd USENIX Conference on File and Storage Technologies (FAST '24), February 2024. 
 
 Our implementation of the naïve and the deduplication-aware index is based on the Destor open-source storage system: https://github.com/fomy/destor
 
