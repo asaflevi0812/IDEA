@@ -2,10 +2,11 @@ This repository contains the source code for the paper:
 
 #### Asaf Levi, Philip Shilane, Sarai Sheinvald, Gala Yadgar. Physical vs. Logical Indexing with IDEA: Inverted Deduplication-Aware Index. To appear in 22nd USENIX Conference on File and Storage Technologies (FAST '24), February 2024. 
 Our implementation of the naïve and the deduplication-aware index is based on the Destor open-source storage system: https://github.com/fomy/destor
+
 System requirements: Ubuntu version 16.04, and the list of dependencies installed by the script provided. 
 
 # SETUP & INSTALL #
-USE A CLEAN UBUNTU SERVER 16.04 LTS IMAGE. (FROM [HERE](https://releases.ubuntu.com/16.04/ubuntu-16.04.7-server-amd64.iso))
+MAKE SURE TO USE A CLEAN UBUNTU SERVER 16.04 LTS IMAGE, IF POSSIBLE. (FROM [HERE](https://releases.ubuntu.com/16.04/ubuntu-16.04.7-server-amd64.iso))
 
 ### install git and pull artifacts repository
 Simply install git and clone the repo.
