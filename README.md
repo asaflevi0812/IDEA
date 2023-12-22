@@ -110,4 +110,32 @@ For example use:
 
 to search the file-med dictionary in the naive index.
 
-# CONFIGURATION OPTIONS: destor.config #
+# CONFIGURATION OPTIONS #
+### destor.config
+When destor is initialized, it reads a configuration file named in a fixed name, `destor.config`, which contains lines in the following format:
+
+```
+<configuration_variable> <value>
+```
+
+For example:
+```
+working-directory "/home/asaf.levi/destor_working_directory"
+chunking-type whitespace
+reverse-mapping db
+```
+
+The following values are used to configure parameters regarding IDEA and NAIVE:
+* working-directory: path to a directory which will contain the deduplicated backups.
+* index-directory: path to the HDD-part of an index. It will store different parts of the index according to the index type:
++ NAIVE: the entire index
++ IDEA: the term-to-file map
++ IDEA-indirect: the term-to-chunk map
+* reverse-directory: path to the SSD-part of an index. It will store different parts of the index according to the index type:
++ IDEA: the file-to-path map
++ IDEA-indirect: the chunk-to-file and file-to-path maps
+* chunking-type: can hold the values ` whitespace` or `whitespace-reversed`. The former is our default whitespace chunking and the latter is a chunking method used for fixed-sized blocks, where the next whitespace is searched before the chunk boundary and not after. More about these two methods in the paper.
+* reverse-mapping: the type of chunk-to-file 
+* indirect-path-strings: whether to enable file-to-path mapping. Always set to yes in our paper.
+* offsets-mode: whether to store offsets. Supported values are `none` and `term-vectors`, where `term-vectors` is the only offsets option in the paper.
+* tf-idf: whether to store tf-idf values. `yes` \ `no` value.
