@@ -135,7 +135,7 @@ The following values are used to configure parameters regarding IDEA and NAIVE:
 - IDEA: the file-to-path map
 - IDEA-indirect: the chunk-to-file and file-to-path maps
 * chunking-type: can hold the values ` whitespace` or `whitespace-reversed`. The former is our default whitespace chunking and the latter is a chunking method used for fixed-sized blocks, where the next whitespace is searched before the chunk boundary and not after. More about these two methods in the paper.
-* reverse-mapping: the type of chunk-to-file 
+* reverse-mapping: the type of chunk-to-file mapping. May be `in-doc` for IDEA and `db` for IDEA-indirect.
 * indirect-path-strings: whether to enable file-to-path mapping. Always set to yes in our paper.
 * offsets-mode: whether to store offsets. Supported values are `none` and `term-vectors`, where `term-vectors` is the only offsets option in the paper.
 * tf-idf: whether to store tf-idf values. `yes` \ `no` value.
