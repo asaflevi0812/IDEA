@@ -139,3 +139,33 @@ The following values are used to configure parameters regarding IDEA and NAIVE:
 * indirect-path-strings: whether to enable file-to-path mapping. Always set to yes in our paper.
 * offsets-mode: whether to store offsets. Supported values are `none` and `term-vectors`, where `term-vectors` is the only offsets option in the paper.
 * tf-idf: whether to store tf-idf values. `yes` \ `no` value.
+
+## POSSIBLE CONFIGURATIONS:
+#### IDEA
+```
+chunking-type whitespace
+reverse-mapping in-doc
+offsets-mode none
+tf-idf no
+```
+#### IDEA-indirect
+```
+chunking-type whitespace
+reverse-mapping db
+offsets-mode none
+tf-idf no
+```
+#### IDEA with offsets
+```
+chunking-type whitespace
+reverse-mapping db
+offsets-mode term-vectors
+tf-idf no
+```
+#### IDEA with ranking
+```
+chunking-type whitespace
+reverse-mapping db
+offsets-mode none
+tf-idf yes
+```
