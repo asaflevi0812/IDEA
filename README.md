@@ -128,12 +128,12 @@ reverse-mapping db
 The following values are used to configure parameters regarding IDEA and NAIVE:
 * working-directory: path to a directory which will contain the deduplicated backups.
 * index-directory: path to the HDD-part of an index. It will store different parts of the index according to the index type:
-+ NAIVE: the entire index
-+ IDEA: the term-to-file map
-+ IDEA-indirect: the term-to-chunk map
+- NAIVE: the entire index
+- IDEA: the term-to-file map
+- IDEA-indirect: the term-to-chunk map
 * reverse-directory: path to the SSD-part of an index. It will store different parts of the index according to the index type:
-+ IDEA: the file-to-path map
-+ IDEA-indirect: the chunk-to-file and file-to-path maps
+- IDEA: the file-to-path map
+- IDEA-indirect: the chunk-to-file and file-to-path maps
 * chunking-type: can hold the values ` whitespace` or `whitespace-reversed`. The former is our default whitespace chunking and the latter is a chunking method used for fixed-sized blocks, where the next whitespace is searched before the chunk boundary and not after. More about these two methods in the paper.
 * reverse-mapping: the type of chunk-to-file 
 * indirect-path-strings: whether to enable file-to-path mapping. Always set to yes in our paper.
