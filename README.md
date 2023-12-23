@@ -75,14 +75,14 @@ The entire directory will be recursively backed up in the backup directory defin
 ### naive index
 to create a naive index from the currently stored deduplicated backup - run the following command:
 
-`destor -n`
+`destor -an`
 
 The index will be stored in the HDD part index directory defined in destor.config (discussed below).
 
 ### IDEA index
 to create an IDEA index from the currently stored deduplicated backup - run the following command:
 
-`destor -q`
+`destor -aq`
 
 The index parts will be stored accordingly the HDD part index directory and SSD part directory, both are defined in destor.config (discussed below).
 
