@@ -199,3 +199,24 @@ The script `scripts/create_indexes.sh` creates the basic IDEA and Naive index ve
 The output should indicate the start and end of the naive and deduplicated index building process. During the process, an updating progress bar appears with the number of chunks and files processed. After each index is built, several parameters’ values are printed. 
 The indexes will be created in the working directories mentioned above.
 The indexing time and index size for each index is logged by the script in the csv file _index.log_. Indexing time is in the *total_time* column and index size is in the *complete_index_size* column.
+
+##### indexing with offsets or ranks:
+Use the "base indexing" guide with `offset.config` or `ranking.config` instead of `default.config`.
+
+#### Figures from the paper
+##### Figure 10
+The script `scripts/figure_10.sh` performs lookup of keywords from the file-med dictionary in each index type.
+It searches increasing numbers of keywords, like in *Figure 10* from the paper, clearing the cache and starting up the index before each lookup.
+The lookup time for each index and each number of keywords is logged by the script in the following csv file: *lookup.log*.
+The script creates *lookup.log* in a CSV format, where the interesting values are *index_type*, *keywords_num* and *total_lookup_time*. *Index_type* is `naive` for Naive, and `dedup` for IDEA, *keywords_num* represents the number of keywords, and the *total_lookup_time* is in seconds. All the results are for the file-med dictionary.
+
+##### Figure 11
+The script `scripts/figure_11.sh` performs a lookup of 128 keywords from each dictionary in each index type, like in *Figure 11* from the paper, clearing the cache and starting up the index before each lookup.
+The lookup time for each index and each number of keywords is logged by the script in the following csv file: *lookup.log*.
+The script runs lookups for the dictionaries one after the other: file-low, file-med, file-high, chunk-low, chunk-med, chunk-high - for each dictionary, first runs the Naive version and then the IDEA version. Therefore there are 12 result rows in the CSV file.
+**When the system is configured with offsets enabled, this script can be used to reproduce Figure 15**
+
+##### Figure 16
+The script `scripts/figure_16.sh` performs a lookup of a single keyword from the file-med and then the chunk-med dictionaries in each index type, like in *Figures 9+16* from the paper.
+The lookup time for each index and each dictionary is logged by the script in the following csv file: `lookup.log`.
+There are 4 single keywords averaged - `1a`, `1b`, `1c` and `1d`. For each dictionary they are looked up in that order, first for the Naive version and then for the IDEA version. Therefore the CSV file contains 16 result rows.
