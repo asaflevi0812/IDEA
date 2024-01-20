@@ -215,7 +215,7 @@ The script `scripts/figure_11.sh` performs a lookup of 128 keywords from each di
 The lookup time for each index and each number of keywords is logged by the script in the following csv file: *lookup.log*.
 The script runs lookups for the dictionaries one after the other: file-low, file-med, file-high, chunk-low, chunk-med, chunk-high - for each dictionary, first runs the Naive version and then the IDEA version. Therefore there are 12 result rows in the CSV file.
 
-**When the system is configured with offsets enabled, this script can be used to reproduce Figure 15**
+**When the system is configured with offsets enabled, the `figure_11.sh` script can be used to reproduce Figure 15**
 
 ##### Figure 16
 The script `scripts/figure_16.sh` performs a lookup of a single keyword from the file-med and then the chunk-med dictionaries in each index type, like in *Figures 9+16* from the paper.
