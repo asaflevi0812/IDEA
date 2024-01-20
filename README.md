@@ -86,6 +86,17 @@ to create an IDEA index from the currently stored deduplicated backup - run the 
 
 The index parts will be stored accordingly the HDD part index directory and SSD part directory, both are defined in destor.config (discussed below).
 
+### inline index
+to create an inline index, which should backup the data and create the index concurrently, use the following commands:
+
+`destor -n <path to data>`
+
+for naive inline index and
+
+`destor -q <path to data>`
+
+for IDEA-indirect inline index.
+
 ### lookup keywords from the command line interface
 use the command:
 
@@ -141,6 +152,8 @@ The following values are used to configure parameters regarding IDEA and NAIVE:
 * tf-idf: whether to store tf-idf values. `yes` \ `no` value.
 
 ## POSSIBLE CONFIGURATIONS:
+Several configurations where pre-created in the "configs" directory. These are the important values in these configurations:
+
 #### IDEA
 ```
 chunking-type whitespace
@@ -169,3 +182,20 @@ reverse-mapping db
 offsets-mode none
 tf-idf yes
 ```
+
+# REPRODUCING RESULTS #
+The results are best reproduced on a suitable clean Ubuntu 16.04 machine with only the required installations. If the use of SSDs and HDDs as described in the paper is possible, then the results should be more accurate.
+
+#### base indexing
+First, make sure the system is configured to create offset-less and rank-less indexes, and that the index working directories are empty.
+You can do that with the following command:
+
+```
+scripts/clean_index.sh
+cp configs/default.config destor.config
+```
+
+The script `scripts/create_indexes.sh` creates the basic IDEA and Naive index versions, cleaning the OS cache before each creation, and measures the creation time.
+The output should indicate the start and end of the naive and deduplicated index building process. During the process, an updating progress bar appears with the number of chunks and files processed. After each index is built, several parameters’ values are printed. 
+The indexes will be created in the working directories mentioned above.
+The indexing time and index size for each index is logged by the script in the csv file _index.log_. Indexing time is in the *total_time* column and index size is in the *complete_index_size* column.
