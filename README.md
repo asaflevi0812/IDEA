@@ -239,12 +239,15 @@ There are 4 single keywords averaged - `1a`, `1b`, `1c` and `1d`. For each dicti
 
 # DATASETS
 In order to retrieve the Linux and Wikipedia datasets, you may use the following resources:
+
 [LINUX KERNEL MIRROR](https://mirrors.kernel.org/)
+
 We used the versions between 2.0 and 5.9 (inclusive).
 LNX-198, for example, contains all the minor versions in this range.
 Other datasets' creation is described in the paper.
 
-[ENWIKI DUMPS - CURRENT DATASETS](https://dumps.wikimedia.org/enwiki/)
+[ENWIKI DUMPS](https://dumps.wikimedia.org/enwiki/)
+
 We used old versions of the same enwiki dump from the wikipedia dumps.
 The versions we used are between January 2017 and March 2018.
 You may access these versions using the internet archive:
