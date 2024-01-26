@@ -198,12 +198,16 @@ cp configs/default.config destor.config
 
 The script `scripts/create_indexes.sh` creates the basic IDEA and Naive index versions, cleaning the OS cache before each creation, and measures the creation time.
 The output should indicate the start and end of the naive and deduplicated index building process. During the process, an updating progress bar appears with the number of chunks and files processed. After each index is built, several parameters’ values are printed. 
-The script createד indexes as in *Figures 7+8* from the paper.
+The script creates indexes as in *Figures 7+8* from the paper.
 The indexes will be created in the working directories mentioned above.
 The indexing time and index size for each index is logged by the script in the csv file _index.log_. Indexing time is in the *total_time* column and index size is in the *complete_index_size* column.
 
+**estimated runtime for LNX-198: 2 hours**
+
 ##### indexing with offsets or ranks:
 Use the "base indexing" guide with `offset.config` or `ranking.config` instead of `default.config`.
+
+**estimated runtime for LNX-198: 2.5-3 hours**
 
 #### Figures from the paper
 ##### Figure 10
@@ -223,6 +227,11 @@ The script runs lookups for the dictionaries one after the other: file-low, file
 The script `scripts/figure_16.sh` performs a lookup of a single keyword from the file-med and then the chunk-med dictionaries in each index type, like in *Figures 9+16* from the paper.
 The lookup time for each index and each dictionary is logged by the script in the following csv file: `lookup.log`.
 There are 4 single keywords averaged - `1a`, `1b`, `1c` and `1d`. For each dictionary they are looked up in that order, first for the Naive version and then for the IDEA version. Therefore the CSV file contains 16 result rows.
+
+# DATASETS
+In order to retrieve the Linux and Wikipedia datasets, you may use the following resources:
+[LINUX KERNEL MIRROR](https://mirrors.kernel.org/)
+[WIKIPEDIA - INTERNET ARCHIVE]()
 
 # KNOWN ISSUES
 ##### `locale::facet::_S_create_c_locale name not valid`
