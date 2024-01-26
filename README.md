@@ -240,7 +240,22 @@ There are 4 single keywords averaged - `1a`, `1b`, `1c` and `1d`. For each dicti
 # DATASETS
 In order to retrieve the Linux and Wikipedia datasets, you may use the following resources:
 [LINUX KERNEL MIRROR](https://mirrors.kernel.org/)
-[WIKIPEDIA - INTERNET ARCHIVE]()
+We used the versions between 2.0 and 5.9 (inclusive).
+LNX-198, for example, contains all the minor versions in this range.
+Other datasets' creation is described in the paper.
+
+[ENWIKI DUMPS - CURRENT DATASETS](https://dumps.wikimedia.org/enwiki/)
+We used old versions of the same enwiki dump from the wikipedia dumps.
+The versions we used are between January 2017 and March 2018.
+You may access these versions using the internet archive:
+[01/03/2017](https://archive.org/details/enwiki-20170301),
+[20/03/2017](https://archive.org/details/enwiki-20170320),
+[01/04/2017](https://archive.org/details/enwiki-20170401),
+[20/04/2017](https://archive.org/details/enwiki-20170420),
+etc. (link format: https://archive.org/details/enwiki-YYYYMMDD).
+The relevant file to retrieve is `enwiki-YYYYMMDD-pages-articles.xml.bz2`.
+We split it into smaller files, of course, after decompression.
+The exact Wikipedia datasets' creation is described in the paper.
 
 # KNOWN ISSUES
 ##### `locale::facet::_S_create_c_locale name not valid`
