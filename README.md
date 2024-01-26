@@ -202,12 +202,12 @@ The script creates indexes as in *Figures 7+8* from the paper.
 The indexes will be created in the working directories mentioned above.
 The indexing time and index size for each index is logged by the script in the csv file _index.log_. Indexing time is in the *total_time* column and index size is in the *complete_index_size* column.
 
-**estimated runtime for LNX-198: 2 hours**
+**[estimated runtime for LNX-198: 2 hours]**
 
 ##### indexing with offsets or ranks:
 Use the "base indexing" guide with `offset.config` or `ranking.config` instead of `default.config`.
 
-**estimated runtime for LNX-198: 2.5-3 hours**
+**[estimated runtime for LNX-198: 2.5-3 hours]**
 
 #### Figures from the paper
 ##### Figure 10
