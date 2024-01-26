@@ -223,3 +223,9 @@ The script runs lookups for the dictionaries one after the other: file-low, file
 The script `scripts/figure_16.sh` performs a lookup of a single keyword from the file-med and then the chunk-med dictionaries in each index type, like in *Figures 9+16* from the paper.
 The lookup time for each index and each dictionary is logged by the script in the following csv file: `lookup.log`.
 There are 4 single keywords averaged - `1a`, `1b`, `1c` and `1d`. For each dictionary they are looked up in that order, first for the Naive version and then for the IDEA version. Therefore the CSV file contains 16 result rows.
+
+# KNOWN ISSUES
+##### `locale::facet::_S_create_c_locale name not valid`
+This error may be introduced on computers with a locale which Lucene cannot recognize.
+It can be solved by running the following command:
+`export LC_ALL="en_US.UTF-8"`
