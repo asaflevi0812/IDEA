@@ -1,0 +1,7 @@
+dict (avg. files, avg. chunks)
+file-low.txt (1.28125, 1.109375)
+file-med.txt (9.3515625, 3.5703125)
+file-high.txt (95.40625, 40.0859375)
+chunk-low.txt (8.25, 1.4296875)
+chunk-med.txt (16.0859375, 9.3671875)
+chunk-high.txt (208.859375, 94.59375)
