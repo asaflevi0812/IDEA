@@ -185,6 +185,7 @@ tf-idf yes
 
 # REPRODUCING RESULTS #
 The results are best reproduced on a suitable clean Ubuntu 16.04 machine with only the required installations. If the use of SSDs and HDDs as described in the paper is possible, then the results should be more accurate.
+NOTE: the figure scripts do not generate a graphical figure, they generate a CSV.
 
 #### base indexing
 First, make sure the system is configured to create offset-less and rank-less indexes, and that the index working directories are empty.
@@ -197,6 +198,7 @@ cp configs/default.config destor.config
 
 The script `scripts/create_indexes.sh` creates the basic IDEA and Naive index versions, cleaning the OS cache before each creation, and measures the creation time.
 The output should indicate the start and end of the naive and deduplicated index building process. During the process, an updating progress bar appears with the number of chunks and files processed. After each index is built, several parameters’ values are printed. 
+The script createד indexes as in *Figures 7+8* from the paper.
 The indexes will be created in the working directories mentioned above.
 The indexing time and index size for each index is logged by the script in the csv file _index.log_. Indexing time is in the *total_time* column and index size is in the *complete_index_size* column.
 
