@@ -256,10 +256,10 @@ We used old versions of the same enwiki dump from the wikipedia dumps.
 The versions we used are between January 2017 and March 2018.
 Each month there are two backups, in the First and Twentieth of each month.
 You may access these versions using the internet archive:
-[01/03/2017](https://archive.org/details/enwiki-20170301),
-[20/03/2017](https://archive.org/details/enwiki-20170320),
-[01/04/2017](https://archive.org/details/enwiki-20170401),
-[20/04/2017](https://archive.org/details/enwiki-20170420),
+[01/01/2017](https://archive.org/details/enwiki-20170101),
+[20/01/2017](https://archive.org/details/enwiki-20170120),
+[01/02/2017](https://archive.org/details/enwiki-20170201),
+[20/02/2017](https://archive.org/details/enwiki-20170220),
 etc. (link format: https://archive.org/details/enwiki-YYYYMMDD).
 The relevant file to retrieve is `enwiki-YYYYMMDD-pages-articles.xml.bz2`.
 We split this file into smaller, 100MB files, after decompression.
