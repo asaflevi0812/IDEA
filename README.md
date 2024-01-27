@@ -261,9 +261,16 @@ You may access these versions using the internet archive:
 [01/02/2017](https://archive.org/details/enwiki-20170201),
 [20/02/2017](https://archive.org/details/enwiki-20170220),
 etc. (link format: https://archive.org/details/enwiki-YYYYMMDD).
+
 The relevant file to retrieve is `enwiki-YYYYMMDD-pages-articles.xml.bz2`.
+
 We split this file into smaller, 100MB files, after decompression.
-WIKI-24 was created by using all available versions between January 2017 and March 2018. WIKI-12, WIKI-8 and WIKI-4 were created by a conseuctive subset of the WIKI-24 version. There were also WIKI-24 and WIKI-12 versions with files of size 1MB.
+
+WIKI-24 was created by using all available versions between January 2017 and March 2018. 
+
+WIKI-12, WIKI-8 and WIKI-4 were created by a conseuctive subset of the WIKI-24 version. 
+
+There were also WIKI-24 and WIKI-12 versions with files of size 1MB.
 
 # KNOWN ISSUES
 ##### `locale::facet::_S_create_c_locale name not valid`
