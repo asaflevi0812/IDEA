@@ -239,7 +239,8 @@ There are 4 single keywords averaged - `1a`, `1b`, `1c` and `1d`. For each dicti
 
 # DATASETS
 Dataset resources: [LINUX KERNEL MIRROR](https://mirrors.kernel.org/), [ENWIKI DUMPS](https://dumps.wikimedia.org/enwiki/) and the old Wikipedia mirrors on the [INTERNET ARCHIVE](https://archive.org/).
-For more information on how the datasets were built and how to recreate them, check the dataset_details directory.
+
+For more information on how the datasets were built and how to recreate them, check the `dataset_details` directory.
 
 
 # KNOWN ISSUES
