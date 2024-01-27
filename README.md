@@ -272,6 +272,8 @@ WIKI-12, WIKI-8 and WIKI-4 were created by a conseuctive subset of the WIKI-24 v
 
 There were also WIKI-24 and WIKI-12 versions with files of size 1MB.
 
+The exact versions of each dataset are specified under the `dataset_details` directory. Each DATASET.txt file sepcifies the exact versions used in that dataset.
+
 # KNOWN ISSUES
 ##### `locale::facet::_S_create_c_locale name not valid`
 This error may be introduced on computers with a locale which Lucene cannot recognize.
