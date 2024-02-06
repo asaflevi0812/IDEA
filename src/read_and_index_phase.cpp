@@ -1,3 +1,14 @@
+/**
+ * @file read_and_index_phase.cpp
+ * @author Asaf Levi
+ * @brief ADDED FOR IDEA
+ * Enables inline indexing for the NAIVE implementation
+ * from the IDEA paper. It replaces the read phase of destor,
+ * the phase where files are read from disk, with a phase
+ * that operates in a similar manner, and enqueues each file to be
+ * indexed by the Naive method in a separate thread.
+ */
+
 #include "destor.h"
 #include "jcr.h"
 #include "backup.h"

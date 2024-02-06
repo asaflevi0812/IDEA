@@ -3,6 +3,8 @@
  *
  *  Created on: May 22, 2012
  *      Author: fumin
+ *  
+ * ADDED FOR IDEA: the ability to mark and indexed files.
  */
 
 #include "recipestore.h"

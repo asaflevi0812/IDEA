@@ -1,3 +1,11 @@
+/**
+ * @file rankstore.h
+ * @author Asaf Levi
+ * @brief ADDED FOR IDEA
+ * The rankstore is a module in IDEA used
+ * for saving the data from which the ranks 
+ * are later calculated. It uses a berkeley database.
+ */
 #ifndef _RANKSTORE_H_
 #define _RANKSTORE_H_
 

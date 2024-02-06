@@ -25,7 +25,7 @@ struct jcr{
 
     int status;
 
-	int32_t search_results_num; // DedupSearch
+	int32_t search_results_num; 
 	int32_t file_num;
 	int64_t data_size;
 	int64_t unique_data_size;
@@ -57,15 +57,15 @@ struct jcr{
 	double read_recipe_time;
 	double read_chunk_time;
 	double write_chunk_time;
-
-	double clean_cache_time; // DedupSearch
-	double fetch_results_time; // DedupSearch
-	double search_chunk_time; // DedupSearch
-	double search_file_time; // DedupSearch
-	double init_search_time; // DedupSearch
-	double process_data_time; // DedupSearch
-	double create_reverse_mapping_time; // DedupSearch
-	double pre_suf_search_time; // DedupSearch
+	// from hereon: all the struct fields were added for IDEA
+	double clean_cache_time; 
+	double fetch_results_time; 
+	double search_chunk_time; 
+	double search_file_time; 
+	double init_search_time; 
+	double process_data_time; 
+	double create_reverse_mapping_time; 
+	double pre_suf_search_time; 
 
 	int32_t read_container_num;
 

@@ -1,3 +1,9 @@
+/**
+ * @file utils.c
+ * @author Asaf Levi
+ * 
+ * ADDED FOR IDEA
+ */
 #include "utils.h"
 
 #include <ftw.h>

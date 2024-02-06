@@ -1,5 +1,12 @@
-/* chunking.h
- the main fuction is to chunking the file!
+/**
+ * SEVERAL FEATURES WERE ADDED FOR THE IDEA PROJECT
+ * @file chunking.h
+ * @author Asaf Levi
+ * @brief created to support generic chunking methods
+ *        with various functions and alignments.
+ * 
+ * @copyright Copyright (c) 2024
+ * 
  */
 
 #ifndef CHUNK_H_

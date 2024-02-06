@@ -1,3 +1,14 @@
+/**
+ * ADDED FOR THE IDEA PROJECT
+ * @file chunking.c
+ * @author Asaf Levi
+ * @brief created to support generic chunking methods
+ *        with various alignments.
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
+
 #include "../destor.h"
 
 #include <ctype.h>

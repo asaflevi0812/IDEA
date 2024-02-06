@@ -1,3 +1,8 @@
+/**
+ * @file file_utils.h
+ * @author Asaf Levi
+ * CREATED FOR IDEA
+ */
 #ifndef _FILE_UTILS_H_
 #define _FILE_UTILS_H_
 

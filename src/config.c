@@ -316,6 +316,7 @@ void load_config_from_string(sds config) {
 				&& argc == 2) {
 			destor.backup_retention_time = atoi(argv[1]);
 		}
+		/// from hereon, options added for IDEA.
 		else if (strcasecmp(argv[0], "chunking-type") == 0
 		&& argc == 2) {
 			if (strcasecmp(argv[1], "default") == 0) {

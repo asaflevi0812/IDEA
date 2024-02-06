@@ -1,3 +1,12 @@
+/**
+ * @file containerstore.c
+ * IDEA Added here the ability to 
+ * mark chunks as indexed.
+ * This required to replace fixed-variables 
+ * inside the file to a general struct, which
+ * will further enable adding more fields to 
+ * the file in the future :).
+ */
 #include "containerstore.h"
 #include "../utils/serial.h"
 #include "../utils/sync_queue.h"

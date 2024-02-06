@@ -1,3 +1,10 @@
+/**
+ * @file chunk_phase.c
+ * ADDED FOR IDEA:
+ * the functionality to support an alignment function,
+ * also supported by destor's configuration.
+ */
+
 #include "destor.h"
 #include "jcr.h"
 #include "chunking/chunking.h"

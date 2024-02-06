@@ -1,3 +1,9 @@
+/**
+ * @file utils.c
+ * @author Asaf Levi
+ * 
+ * ADDED FOR IDEA
+ */
 #ifndef _UTILS_H_
 #define _UTILS_H_
 

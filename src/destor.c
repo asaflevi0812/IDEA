@@ -43,6 +43,7 @@ const char * const short_options = "edyzsr:t:p:hlqnf:mabc";
 struct option long_options[] = {
 		{ "state", 0, NULL, 's' },
 		{ "help", 0, NULL, 'h' },
+		/// all the options below are for IDEA.
 		{ "naive-index", 0, NULL, 'n'},
 		{ "naive-lookup", 0, NULL, 'm'},
 		{ "dedup-index", 0, NULL, 'q'},

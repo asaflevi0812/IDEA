@@ -1,3 +1,16 @@
+/**
+ * @file dedup_index_filter_phase.c
+ * @author Asaf Levi
+ * @brief ADDED FOR IDEA
+ *        replaces the filter phase of destor 
+ *        for inline indexing. It operates in
+ *        as a similar manner but also enqueues
+ *        file recipes when they are created
+ *        straight into chunk-to-file construction.
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 #include "destor.h"
 #include "jcr.h"
 #include "storage/containerstore.h"

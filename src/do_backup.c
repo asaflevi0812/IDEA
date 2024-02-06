@@ -52,6 +52,8 @@ void do_backup(char *path, int index_mode) {
 	if (destor.simulation_level == SIMULATION_ALL) {
 		start_read_trace_phase();
 	} else {
+		/// IDEA added these options (INDEX_MODE_NAIVE and INDEX_MODE_IDEA), 
+		/// replacing phases for IDEA's inline indexing
 		if (index_mode == INDEX_MODE_NAIVE) {
 			start_read_index_phase();
 		} else {

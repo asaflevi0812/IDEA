@@ -26,7 +26,7 @@ void init_jcr(char *path) {
 
     jcr.status = JCR_STATUS_INIT;
 
-	jcr.search_results_num = 0; // DedupSearch
+	jcr.search_results_num = 0; 
 	jcr.file_num = 0;
 	jcr.data_size = 0;
 	jcr.unique_data_size = 0;
@@ -60,14 +60,14 @@ void init_jcr(char *path) {
 	jcr.read_chunk_time = 0;
 	jcr.write_chunk_time = 0;
 
-	jcr.clean_cache_time = 0; // DedupSearch
-	jcr.fetch_results_time = 0; // DedupSearch
-	jcr.search_chunk_time = 0; // DedupSearch
-	jcr.search_file_time = 0; // DedupSearch
-	jcr.init_search_time = 0; // DedupSearch
-	jcr.process_data_time = 0; // DedupSearch
-	jcr.create_reverse_mapping_time = 0; // DedupSearch
-	jcr.pre_suf_search_time = 0; // DedupSearch
+	jcr.clean_cache_time = 0; 
+	jcr.fetch_results_time = 0; 
+	jcr.search_chunk_time = 0; 
+	jcr.search_file_time = 0; 
+	jcr.init_search_time = 0; 
+	jcr.process_data_time = 0; 
+	jcr.create_reverse_mapping_time = 0; 
+	jcr.pre_suf_search_time = 0; 
 
 	jcr.read_container_num = 0;
 }

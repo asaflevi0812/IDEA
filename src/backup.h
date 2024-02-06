@@ -52,6 +52,7 @@ void stop_rewrite_phase();
  */
 void start_filter_phase();
 void stop_filter_phase();
+/// @brief FOR IDEA: both were added for inline indexing.
 void start_dedup_index_filter_phase();
 void stop_dedup_index_filter_phase();
 /*

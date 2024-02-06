@@ -1,3 +1,8 @@
+/**
+ * @file file_utils.c
+ * @author Asaf Levi
+ * CREATED FOR IDEA
+ */
 #include "file_utils.h"
 
 int count_lines_of_file(FILE* f)
