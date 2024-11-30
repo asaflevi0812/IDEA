@@ -42,6 +42,10 @@ Installs the libraries required for IDEA:
 # if some necessities are missing may need to [PRESS Y ENTER] on several requests.
 chmod +x install_dependencies.sh
 ./install_dependencies.sh
+# now add libboost to path
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/<path_to_idea>/IDEA/boost_1_58_0/stage/lib/
+# and make libboost in path on every bash start
+echo "export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/<path_to_idea>/IDEA/boost_1_58_0/stage/lib/" >> ~/.bashrc
 ```
 
 # BUILD & ENVIRONMENT #
