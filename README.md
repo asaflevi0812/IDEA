@@ -8,12 +8,12 @@ This repository contains the source code for the paper:
 
 Our implementation of the naïve and the deduplication-aware index is based on the Destor open-source storage system: https://github.com/fomy/destor
 
-System requirements: Ubuntu version 16.04, and the list of dependencies installed by the script provided. 
+System requirements: Ubuntu version 22.04, and the list of dependencies installed by the script provided. 
 
 # SETUP & INSTALL #
-MAKE SURE TO USE A CLEAN UBUNTU SERVER 16.04 LTS IMAGE, IF POSSIBLE. (FROM [HERE](https://releases.ubuntu.com/16.04/ubuntu-16.04.7-server-amd64.iso))
+MAKE SURE TO USE A CLEAN UBUNTU SERVER 22.04 LTS IMAGE, IF POSSIBLE. (FROM [HERE](https://releases.ubuntu.com/16.04/ubuntu-16.04.7-server-amd64.iso))
 
-An existing Ubuntu 16.04 machine is also OK. The `install_dependencies.sh` script is meant to run on a clean Ubuntu Server installation.
+An existing Ubuntu 22.04 machine is also OK. The `install_dependencies.sh` script is meant to run on a clean Ubuntu Server installation.
 
 ### install git and pull artifacts repository
 Simply install git and clone the repo.
@@ -33,9 +33,13 @@ Installs the libraries required for IDEA:
 * BOOST
 * SSL
 * GLIB
+* CMAKE
 ```
 # takes about a minute until a single [PRESS ENTER] is required. -- sometimes it does not.
-# after that, about ten minutes of installation, probably less.
+# after that, about twenty minutes of installation, probably less.
+# it is important to notice that this will *UPDATE EXISTING VERSIONS* of your boost and Lucene++.
+# it will download cmake 3.22.1 and it's important to not have an older version because of cmake parameters.
+# if some necessities are missing may need to [PRESS Y ENTER] on several requests.
 chmod +x install_dependencies.sh
 ./install_dependencies.sh
 ```
@@ -47,6 +51,11 @@ RUN this from the IDEA repository to compile the code.
 ```
 chmod +x compile.sh
 ./compile.sh
+```
+# Note #
+if the compile.sh finished with no errors and while running destor you receive libboost not found, try adding /usr/local/bin to the system path:
+```
+export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 ```
 
 ### prepare backup and index directories
@@ -248,3 +257,4 @@ For more information on how the datasets were built and how to recreate them, ch
 This error may be introduced on computers with a locale which Lucene cannot recognize.
 It can be solved by running the following command:
 `export LC_ALL="en_US.UTF-8"`
+

@@ -23,9 +23,9 @@ static void* sha1_thread(void* arg) {
 		TIMER_DECLARE(1);
 		TIMER_BEGIN(1);
 		SHA_CTX ctx;
-		SHA_Init(&ctx);
-		SHA_Update(&ctx, c->data, c->size);
-		SHA_Final(c->fp, &ctx);
+		SHA1_Init(&ctx);
+		SHA1_Update(&ctx, c->data, c->size);
+		SHA1_Final(c->fp, &ctx);
 		TIMER_END(1, jcr.hash_time);
 
 		hash2code(c->fp, code);
