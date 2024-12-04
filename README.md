@@ -263,6 +263,6 @@ It can be solved by running the following command:
 `export LC_ALL="en_US.UTF-8"`
 
 # CONTRIBUTORS
-Asaf Levi - one of the authors of "Physical vs. Logical Indexing with IDEA: Inverted Deduplication-Aware Index", integrated Lucene into destor and implemented Naive index and IDEA, including all their additional features.
-Nadav Elias - one of the authors of "DedupSearch: Two-Phase Deduplication Aware Keyword Search", provided the first extended version of destor for exhaustive search, on top of which this code-base was built.
-Eyal Shahar - upgraded the infrastructure of this code-base to work with ubuntu 22.04.
+* Asaf Levi - one of the authors of "Physical vs. Logical Indexing with IDEA: Inverted Deduplication-Aware Index", integrated Lucene into destor and implemented Naive index and IDEA, including all their additional features.
+* Nadav Elias - one of the authors of "DedupSearch: Two-Phase Deduplication Aware Keyword Search", provided the first extended version of destor for exhaustive search, on top of which this code-base was built.
+* Eyal Shahar - upgraded the infrastructure of this code-base to work with ubuntu 22.04.
