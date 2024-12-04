@@ -11,7 +11,7 @@ Our implementation of the naïve and the deduplication-aware index is based on t
 System requirements: Ubuntu version 22.04, and the list of dependencies installed by the script provided. 
 
 # SETUP & INSTALL #
-MAKE SURE TO USE A CLEAN UBUNTU SERVER 22.04 LTS IMAGE, IF POSSIBLE. (FROM [HERE](https://releases.ubuntu.com/16.04/ubuntu-16.04.7-server-amd64.iso))
+MAKE SURE TO USE A CLEAN UBUNTU SERVER 22.04 LTS IMAGE, IF POSSIBLE. (FROM [HERE](https://releases.ubuntu.com/22.04/))
 
 An existing Ubuntu 22.04 machine is also OK. The `install_dependencies.sh` script is meant to run on a clean Ubuntu Server installation.
 
@@ -197,7 +197,7 @@ tf-idf yes
 ```
 
 # REPRODUCING RESULTS #
-The results are best reproduced on a suitable clean Ubuntu 16.04 machine with only the required installations. If the use of SSDs and HDDs as described in the paper is possible, then the results should be more accurate.
+The results are best reproduced on a suitable clean Ubuntu 22.04 machine with only the required installations. If the use of SSDs and HDDs as described in the paper is possible, then the results should be more accurate.
 NOTE: the figure scripts do not generate a graphical figure, they generate a CSV.
 
 #### base indexing
@@ -262,3 +262,7 @@ This error may be introduced on computers with a locale which Lucene cannot reco
 It can be solved by running the following command:
 `export LC_ALL="en_US.UTF-8"`
 
+# CONTRIBUTORS
+Asaf Levi - one of the authors of "Physical vs. Logical Indexing with IDEA: Inverted Deduplication-Aware Index", integrated Lucene into destor and implemented Naive index and IDEA, including all their additional features.
+Nadav Elias - one of the authors of "DedupSearch: Two-Phase Deduplication Aware Keyword Search", provided the first extended version of destor for exhaustive search, on top of which this code-base was built.
+Eyal Shahar - upgraded the infrastructure of this code-base to work with ubuntu 22.04.
